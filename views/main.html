@@ -1,8 +1,16 @@
-<div class="header">
+<div class="header" ng-controller="MessageCtrl">
   <h3 class="text-muted">chatty</h3>
-</div>
+
 
 <h4>Latest Chats:</h4>
 <div class="jumbotron">
 
+<form ng-submit="addMessage()">
+	<input type="text" ng-model="newMessage" placeholder="New Chat Message">
+</form>
+	<div  ng-repeat="message in messages">
+	{{message.text}}
+	{{message.timeStamp | date: 'shortTime'}}
+	</div>
+</div>
 </div>
