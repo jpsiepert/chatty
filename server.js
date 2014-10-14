@@ -43,7 +43,7 @@ var onRequest = function(req, res){
 	
  if(req.method === 'OPTIONS'){
  	console.log('first');
-      res.end(JSON.stringify(messages))
+      res.end()
     }
 	console.log(req.method)
 };

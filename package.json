@@ -1,0 +1,28 @@
+{
+  "name": "chatty",
+  "version": "1.0.0",
+  "description": "Chatty App",
+  "main": "expressServer.js",
+  "dependencies": {
+    "body-parser": "^1.9.0",
+    "express": "^4.9.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "Chat it up",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jpsiepert/chatty.git"
+  },
+  "keywords": [
+    "Chat"
+  ],
+  "author": "Jennifer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpsiepert/chatty/issues"
+  },
+  "homepage": "https://github.com/jpsiepert/chatty"
+}
