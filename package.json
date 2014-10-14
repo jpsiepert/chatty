@@ -5,6 +5,7 @@
   "main": "expressServer.js",
   "dependencies": {
     "body-parser": "^1.9.0",
+    "cors": "^2.4.2",
     "express": "^4.9.7"
   },
   "devDependencies": {},

@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var port = 8081;
 var bodyParser = require('body-parser');
+var cors = require('cors');
 var messages = [{text: 'Sample Message', author: 'A. Lincoln', timeStamp: "1692"}];
 // var headers = {
 // 		'Connection': 'closed',
@@ -16,15 +17,16 @@ app.listen(port, function(){
 });
 
 app.use(bodyParser());
+app.use(cors());
 
-app.use(function(req, res, next){
+// app.use(function(req, res, next){
 
-		res.header('Access-Control-Allow-Origin', '*');
-		res.header('Access-Control-Allow-Methods','OPTIONS, GET, POST');
-	  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+// 		res.header('Access-Control-Allow-Origin', '*');
+// 		res.header('Access-Control-Allow-Methods','OPTIONS, GET, POST');
+// 	  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 		
-		next();
-});
+// 		next();
+// });
 //can install and use cors instead of the headers
 
 app.get('/', function(req, res){
